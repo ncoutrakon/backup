@@ -1,6 +1,9 @@
 #!/bin/bash
 cd ~/.wine/drive_c/SierraChart 2> ~/daytrader/backup/log.txt
 
+rm -rf ~/daytrader/backup/SierraChart
+mkdir -p ~/daytrader/backup/SierraChart/data
+
 cp *.xml ~/daytrader/backup/SierraChart/ 2>> ~/daytrader/backup/log.txt
 cp *.config ~/daytrader/backup/SierraChart/ 2>> ~/daytrader/backup/log.txt
 cp TradeActivityLog.dat ~/daytrader/backup/SierraChart/ 2>> ~/daytrader/backup/log.txt
